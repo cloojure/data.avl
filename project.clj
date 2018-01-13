@@ -12,6 +12,10 @@
   :source-paths ["src/main/clojure" "src/main/cljs"]
   :test-paths ["src/test/clojure"]
   :aliases {"all" ["with-profile" "dev:dev,1.6:dev,1.7:dev,1.8:dev,1.9"]}
+
+  :plugins  [ [lein-codox "0.10.3"] ]
+  :codox {:src-dir-uri "http://github.com/cloojure/data.avl/blob/master/"
+          :src-linenum-anchor-prefix "L"}
   :profiles {:dbg  {:jvm-opts ["-XX:-OmitStackTraceInFastThrow"]}
              :cljs {:dependencies [[org.clojure/clojure "1.9.0-beta2"]
                                    [org.clojure/clojurescript "1.9.946"]
