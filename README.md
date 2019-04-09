@@ -8,6 +8,10 @@ lookups, splits by index or key and subsets/submaps.
 
 Persistent AVL trees are used as the underlying data structure.
 
+## Leiningen coordinates:
+
+    [org.clojure/data.avl "0.0.18"]  ; as of 2019-4-8
+
 ## Synopsis
 
 data.avl supports both Clojure and ClojureScript. It exports a single
